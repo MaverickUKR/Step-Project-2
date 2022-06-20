@@ -1,0 +1,110 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul,
+h2,
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 481px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 481px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 481px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 481px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 481px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
