@@ -1,0 +1,254 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul,
+h2,
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.hereis-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 88px 22px 58px 0;
+}
+@media (min-width: 481px) {
+  .hereis-wrapper {
+    margin-top: 98px;
+  }
+}
+@media (min-width: 993px) {
+  .hereis-wrapper {
+    display: grid;
+    background-color: #F4F4F4;
+    height: 711px;
+    margin-top: 70px;
+    grid-template: repeat(4, 1fr), repeat(2, 1fr);
+    grid-template-areas: "list title" "list img" "list img" "list img";
+  }
+}
+
+.hereis-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #8D81AC;
+  margin: 32px 47px 36px 43px;
+}
+.hereis-title::before {
+  position: relative;
+  content: "<";
+  padding-bottom: 40px;
+}
+@media (min-width: 481px) {
+  .hereis-title {
+    margin-top: 62px;
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 993px) {
+  .hereis-title {
+    font-size: 48px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-top: 91.11px;
+    margin-left: 23px;
+    grid-area: title;
+    text-align: left;
+  }
+}
+
+.hereis__list {
+  margin: 0;
+  grid-area: list;
+}
+@media (min-width: 993px) {
+  .hereis__list {
+    height: 100%;
+  }
+}
+
+.hereis__list-item {
+  margin: 36px 26px 2px 25px;
+}
+.hereis__list-item:nth-child(3) {
+  margin-top: 38px;
+}
+.hereis__list-item:nth-child(4) {
+  margin: 40px 22px 49px 30px;
+}
+@media (min-width: 481px) {
+  .hereis__list-item {
+    display: flex;
+    height: 90px;
+    align-items: flex-start;
+    margin: 52px 5px 0 30px;
+  }
+  .hereis__list-item:nth-child(2) {
+    padding-left: 1px;
+  }
+  .hereis__list-item:nth-child(3) {
+    padding-left: 16px;
+  }
+  .hereis__list-item:nth-child(4) {
+    padding-left: 11px;
+  }
+}
+@media (min-width: 481px) and (min-width: 481px) {
+  .hereis__list-item {
+    margin-top: 100px;
+  }
+  .hereis__list-item:nth-child(2) {
+    margin-top: 35.57px;
+  }
+  .hereis__list-item:nth-child(3) {
+    margin-top: 35.57px;
+  }
+  .hereis__list-item:nth-child(4) {
+    margin-top: 36.57px;
+  }
+}
+@media (min-width: 993px) {
+  .hereis__list-item {
+    position: static;
+    height: 110px;
+    padding: 0;
+  }
+}
+
+.hereis__item-icon {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 481px) {
+  .hereis__item-icon {
+    display: flex;
+    position: absolute;
+  }
+}
+
+@media (min-width: 481px) {
+  .hereis__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 134px;
+    align-self: center;
+    margin-right: 22px;
+  }
+}
+
+@media (min-width: 481px) {
+  #hereis-2 {
+    margin-left: 1px;
+  }
+}
+
+@media (min-width: 481px) {
+  #hereis-3 {
+    margin-left: -16px;
+  }
+}
+
+@media (min-width: 481px) {
+  #hereis-4 {
+    margin-left: -11px;
+  }
+}
+
+.hereis__item-title {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  justify-content: center;
+  color: #323232;
+  margin: 27px 26px 14px 24px;
+}
+@media (min-width: 481px) {
+  .hereis__item-title {
+    text-align: left;
+    margin: 0;
+    line-height: 21px;
+  }
+}
+@media (min-width: 993px) {
+  .hereis__item-title {
+    margin-top: -32px;
+  }
+}
+
+.hereis__item-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #848E97;
+}
+@media (min-width: 481px) {
+  .hereis__item-text {
+    font-family: "Montserrat";
+    height: 56px;
+    margin-top: 15.83px;
+    text-align: left;
+  }
+}
+
+.hereis__img-320 {
+  display: flex;
+  align-self: flex-end;
+  padding-left: 19px;
+}
+@media (min-width: 481px) {
+  .hereis__img-320 {
+    display: none;
+  }
+}
+
+.hereis__img-768 {
+  display: none;
+}
+@media (min-width: 481px) {
+  .hereis__img-768 {
+    display: flex;
+    align-self: flex-end;
+    padding: 24px 0 24px 24px;
+  }
+}
+@media (min-width: 993px) {
+  .hereis__img-768 {
+    margin: 0;
+    grid-area: img;
+    margin-top: -30px;
+  }
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+body {
+  min-width: 320px;
+  max-width: 1200px;
+}
