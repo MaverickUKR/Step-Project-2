@@ -5,3 +5,11 @@
 @import "./components/hereis";
 @import "./components/people";
 @import "./components/revolutionary";
+
+* {
+    font-family: 'Montserrat';
+}
+body {
+    min-width: 320px;
+    max-width: 1200px;
+}

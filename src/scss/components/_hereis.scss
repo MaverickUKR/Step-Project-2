@@ -1,2 +1,170 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+
+.hereis-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    margin: 88px 22px 58px 0; 
+    @media (min-width: $tablet-bp) {
+		margin-top: 98px;
+	}
+    @media (min-width: $desktop-bp) {
+        display: grid;
+		background-color: #F4F4F4;
+        height: 711px;
+        margin-top: 70px;
+        grid-template: repeat(4, 1fr), repeat(2, 1fr);
+        grid-template-areas: "list title"
+                             "list img"
+                             "list img"
+                             "list img";
+	}
+}
+.hereis-title {
+    @include hereis-title; 
+    &::before {
+        position: relative;
+        content: "<";
+        padding-bottom: 40px;
+    }
+    @media (min-width: $tablet-bp) {
+		margin-top: 62px;
+        font-size: 42px;
+        line-height: 44px;
+	}
+    @media (min-width: $desktop-bp) {
+        font-size: 48px;
+        line-height: 50px;
+        margin: 0;
+        padding: 0;
+        margin-top: 91.11px;
+        margin-left: 23px;
+        grid-area: title;
+        text-align: left;
+	}
+}
+.hereis__list {
+    margin: 0;
+    grid-area: list;
+    @media (min-width: $desktop-bp) {
+    height: 100%;
+    }
+}
+.hereis__list-item {
+    margin: 36px 26px 2px 25px;
+    &:nth-child(3) {
+        margin-top: 38px;
+    }
+    &:nth-child(4) {
+        margin: 40px 22px 49px 30px;
+    }
+    @media (min-width: $tablet-bp) {
+		display: flex;
+        height: 90px;
+        align-items: flex-start;
+        margin: 52px 5px 0 30px;
+        &:nth-child(2) {
+            padding-left: 1px;
+        }
+        &:nth-child(3) {
+            padding-left: 16px;
+        }
+        &:nth-child(4) {
+            padding-left: 11px;
+        }
+        @media (min-width: $tablet-bp) {
+            margin-top: 100px;
+            &:nth-child(2) {
+                margin-top: 35.57px;
+            }
+            &:nth-child(3) {
+                margin-top: 35.57px;
+            }
+            &:nth-child(4) {
+                margin-top: 36.57px;
+            }
+        }
+	}
+    @media (min-width: $desktop-bp) {
+    position: static;
+    height: 110px;
+    padding: 0;
+    }
+}
+.hereis__item-icon {
+    display: block;
+    margin: 0 auto;
+    @media (min-width: $tablet-bp) {
+    display: flex;
+    position: absolute;
+    }
+}
+.hereis__text-wrapper {
+    @media (min-width: $tablet-bp) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 134px;
+        align-self: center;
+        margin-right: 22px;
+    }
+}  
+#hereis-2 {
+    @media (min-width: $tablet-bp) {
+        margin-left: 1px;
+    }
+}
+#hereis-3 {
+    @media (min-width: $tablet-bp) {
+        margin-left: -16px;
+    }
+}
+#hereis-4 {
+    @media (min-width: $tablet-bp) {
+        margin-left: -11px;
+    }
+}
+.hereis__item-title {
+    @include hereis__item-title;
+    @media (min-width: $tablet-bp) {
+        text-align: left;
+        margin: 0;
+        line-height: 21px;
+	}
+    @media (min-width: $desktop-bp) {
+        margin-top: -32px;
+    }
+}
+
+.hereis__item-text {
+    @include hereis__item-text;
+    @media (min-width: $tablet-bp) {
+        font-family: 'Montserrat';
+        height: 56px;
+        margin-top: 15.83px;        
+        text-align: left;
+}
+}
+.hereis__img-320 {
+    display: flex;
+    align-self: flex-end;
+    padding-left: 19px;
+    @media (min-width: $tablet-bp) {
+        display: none;
+    }
+}
+.hereis__img-768 {
+    display: none;
+    @media (min-width: $tablet-bp) {
+        display: flex;
+        align-self: flex-end;
+        padding: 24px 0 24px 24px;
+    }
+    @media (min-width: $desktop-bp) {
+        margin: 0;
+        grid-area: img;
+        margin-top: -30px;
+    }
+}

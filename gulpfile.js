@@ -48,7 +48,6 @@ const js = () => gulp.src("./src/**/*.js")
 const minImage = () => gulp.src("./src/img/**/*")
     .pipe(imagemin())
     .pipe(gulp.dest('./dist/img'));
-export const build = gulp.parallel(cleanFolder, css, js, htmlMin, minImage)
 
 export const build = gulp.series(cleanFolder, buildStyles, gulp.parallel(css, js, htmlMin, minImage), autoPref)
 
