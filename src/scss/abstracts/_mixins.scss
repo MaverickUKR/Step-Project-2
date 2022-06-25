@@ -26,3 +26,30 @@
     text-align: center;
     color: #848E97;   
 }
+@mixin montserrat-reg {
+    font: {
+      family: $montserrat;
+      weight: 400;
+    }
+}
+
+@mixin montserrat-bold {
+    font: {
+      family: $montserrat;
+      weight: bold;
+    }
+}
+
+@mixin lato-reg {
+    font: {
+      family: $lato;
+      weight: 400;
+    }
+}
+
+@mixin lato-bold {
+    font: {
+      family: $lato;
+      weight: bold;
+    }
+}
