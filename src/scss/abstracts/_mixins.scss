@@ -1,3 +1,94 @@
+@mixin montserrat-reg {
+  font: {
+    family: $montserrat;
+    weight: 400;
+  }
+}
+
+@mixin montserrat-bold {
+  font: {
+    family: $montserrat;
+    weight: bold;
+  }
+}
+
+@mixin lato-reg {
+  font: {
+    family: $lato;
+    weight: 400;
+  }
+}
+@mixin lato-bold {
+  font: {
+    family: $lato;
+    weight: bold;
+  }
+}
+@mixin revolutionary-title {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #635C73;
+  margin-top: 39.5px;
+}
+@mixin revolutionary-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #323232;
+  margin: 27px 26px 36px 18px;
+}
+@mixin revolutionary__btn-list {
+  display: flex;
+  flex-wrap: wrap ;
+  line-height: 24px;
+  max-height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+@mixin revolutionary__list-item {
+  background-color: #f1f1f1;
+  height: 26px;
+  border-radius: 4px;
+  border: #e3e3e3 1px solid;
+  margin-right: 8px;
+  font-size: 12px;
+  color: #333333;
+  line-height: 18px;    
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+@mixin revolutionary__btn-text {
+  font-family: $montserrat;
+  position: relative;
+  color: #333333;
+  display: inline-block;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  font-weight: bold;
+}
+@mixin revolutionary__link-counter {
+  font-family: $montserrat;
+  display: inline-block;
+  min-width: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  background-color: #fff;
+  font-weight: bold;
+  border-left: #e3e3e3 1px solid;
+}
 @mixin hereis-title {
     font-family: $montserrat;
     font-style: normal;
@@ -25,32 +116,6 @@
     line-height: 21px;
     text-align: center;
     color: $grey;   
-}
-@mixin montserrat-reg {
-    font: {
-      family: $montserrat;
-      weight: 400;
-    }
-}
-
-@mixin montserrat-bold {
-    font: {
-      family: $montserrat;
-      weight: bold;
-    }
-}
-
-@mixin lato-reg {
-    font: {
-      family: $lato;
-      weight: 400;
-    }
-}
-@mixin lato-bold {
-    font: {
-      family: $lato;
-      weight: bold;
-    }
 }
 @mixin fork-title {
   font-family: $montserrat;
