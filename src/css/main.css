@@ -19,6 +19,229 @@ body {
   margin: 0;
 }
 
+.fork-wrapper {
+  background-image: url(/dist/img/forkio-background-320.jpg);
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
+
+.fork-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-bottom: 32px;
+}
+@media (min-width: 481px) {
+  .fork-title {
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 39px;
+  }
+}
+@media (min-width: 993px) {
+  .fork-title {
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-top: 83px;
+    margin-bottom: 112px;
+  }
+}
+
+.fork-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+@media (min-width: 481px) {
+  .fork-list {
+    flex-direction: row;
+    margin-left: 121px;
+    margin-right: 108px;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 0;
+  }
+}
+@media (min-width: 993px) {
+  .fork-list {
+    column-gap: 15px;
+    margin: 0 auto;
+  }
+}
+
+.fork__list-item {
+  background: rgba(255, 255, 255, 0.11);
+  height: 457px;
+  width: 257px;
+  margin: 0 auto;
+}
+.fork__list-item:nth-child(4) {
+  margin-bottom: 12px;
+}
+@media (min-width: 481px) {
+  .fork__list-item {
+    margin-bottom: 71px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.fork__list__item-active {
+  background: rgba(70, 48, 72, 0.84);
+  height: 560px;
+  width: 299px;
+  margin: 0 auto;
+}
+@media (min-width: 481px) {
+  .fork__list__item-active {
+    margin: -41px 0 94px -42px;
+  }
+}
+@media (min-width: 993px) {
+  .fork__list__item-active {
+    margin: -51px 0 77px 0;
+  }
+}
+
+.fork__item-productName {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.fork__item__productName-active {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.11);
+}
+
+.fork__item-price {
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 62px;
+}
+.fork__item-price::before {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 62px;
+  content: "$";
+}
+
+.fork__item__price-active {
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin-top: 14px;
+  margin-bottom: 16px;
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 84px;
+}
+.fork__item__price-active::before {
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 84px;
+  content: "$";
+}
+
+.fork__item-period {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.fork__item__period-active {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.fork__item-line {
+  color: rgb(141, 129, 172);
+  border-top: 4px solid;
+  width: 60px;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+.fork__item__line-active {
+  color: rgb(141, 129, 172);
+  border-top: 4px solid;
+  width: 60px;
+  margin-top: 46px;
+  margin-bottom: 40px;
+}
+
+.fork__item-license {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  height: auto;
+  padding: 0 23px;
+}
+
+.fork__item__license-active {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  height: 48px;
+  padding: 0 50px;
+}
+
+.fork__item-btn {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 37px;
+  width: 163px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.fork__item__btn-active {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 83px;
+  margin-bottom: 47px;
+  width: 190px;
+  height: 52px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
 .header {
   position: relative;
   background-color: #27262a;

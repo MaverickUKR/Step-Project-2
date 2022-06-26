@@ -1,3 +1,117 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
+.fork-wrapper {
+    background-image: url(/dist/img/forkio-background-320.jpg);
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    text-align: center;
+}
+.fork-title {
+    @include fork-title;
+    @media (min-width: $tablet-bp) {
+        font-size: 42px;
+        line-height: 44px;
+        font-weight: 700;
+        margin-bottom: 39px;
+    }
+    @media (min-width: $desktop-bp) {
+            font-size: 48px;
+            line-height: 50px;
+            font-weight: 700;
+            margin-top: 83px;
+            margin-bottom: 112px;
+    }
+}
+.fork-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    @media (min-width: $tablet-bp) {
+        flex-direction: row;
+        margin-left: 121px;
+        margin-right: 108px;
+        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 0;
+    }
+    @media (min-width: $desktop-bp) {
+        column-gap: 15px;
+        margin: 0 auto;
+    }
+}
+.fork__list-item {
+    background: rgba(255, 255, 255, 0.11);
+    height: 457px;
+    width: 257px;
+    margin: 0 auto;
+    &:nth-child(4) {
+        margin-bottom: 12px;
+    }
+    @media (min-width: $tablet-bp) {
+        margin-bottom: 71px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.fork__list__item-active {
+    background: rgba(70, 48, 72, .84);
+    height: 560px;
+    width: 299px;
+    margin: 0 auto;
+    @media (min-width: $tablet-bp) {
+        margin: -41px 0 94px -42px;
+    }
+    @media (min-width: $desktop-bp) {
+        margin: -51px 0 77px 0;
+    }
+}
+.fork__item-productName {
+    @include fork__item-productName;
+}
+.fork__item__productName-active {
+    @include fork__item__productName-active;
+}
+.fork__item-price {
+    @include fork__item-price;
+    &::before {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 62px;
+        content: "$";
+    }
+}
+.fork__item__price-active {
+    @include fork__item__price-active;
+    &::before {
+        font-size: 82px;
+        font-weight: 400;
+        line-height: 84px;
+        content: "$";
+    }
+}
+.fork__item-period {
+    @include fork__item-period;
+}
+.fork__item__period-active {
+    @include fork__item-period;
+}
+.fork__item-line {
+    @include fork__item-line;
+}
+.fork__item__line-active {
+    @include fork__item__line-active;
+}
+.fork__item-license {
+    @include fork__item-license;
+}
+.fork__item__license-active {
+    @include fork__item__license-active;
+}
+.fork__item-btn {
+    @include fork__item-btn;
+}
+.fork__item__btn-active {
+    @include fork__item__btn-active;
+}

@@ -46,10 +46,121 @@
       weight: 400;
     }
 }
-
 @mixin lato-bold {
     font: {
       family: $lato;
       weight: bold;
     }
 }
+@mixin fork-title {
+  font-family: $montserrat;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-bottom: 32px;
+}
+@mixin fork__item-productName {
+    font-family: $montserrat;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.06);
+}
+@mixin fork__item__productName-active {
+    font-family: $montserrat;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    margin: 0;
+    background: rgba(0, 0, 0, .11);
+}
+@mixin fork__item-price {
+    font-family: $montserrat;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 62px;
+}
+@mixin fork__item__price-active {
+  font-family: $montserrat;
+  margin-top: 14px;
+  margin-bottom: 16px;
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 84px;
+}
+@mixin fork__item-period {
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+@mixin fork__item-line {
+  color: rgba(141, 129, 172, 1);
+  border-top: 4px solid;
+  width: 60px;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+@mixin fork__item__line-active {
+  color: rgba(141, 129, 172, 1);
+  border-top: 4px solid;
+  width: 60px;
+  margin-top: 46px;
+  margin-bottom: 40px;
+}
+@mixin fork__item-license {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  height: auto;
+  padding: 0 23px;
+} 
+@mixin fork__item__license-active {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  height: 48px;
+  padding: 0 50px;
+}
+@mixin fork__item-btn {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 37px;
+  width: 163px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: rgba(255, 255, 255, .15);
+  cursor: pointer;
+}
+@mixin fork__item__btn-active {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 83px;
+  margin-bottom: 47px;
+  width: 190px;
+  height: 52px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: rgba(255, 255, 255, .15);
+  cursor: pointer;
+}
+
