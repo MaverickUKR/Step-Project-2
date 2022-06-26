@@ -7,7 +7,7 @@
     align-items: center;
     text-align: center;
     width: 100%; 
-    margin: 88px 22px 58px 0; 
+    margin: 88px 22px 6px 0; 
     @media (min-width: $tablet-bp) {
 		margin-top: 98px;
 	}
@@ -141,7 +141,7 @@
 .hereis__item-text {
     @include hereis__item-text;
     @media (min-width: $tablet-bp) {
-        font-family: 'Montserrat';
+        font-family: $montserrat;
         height: 56px;
         margin-top: 15.83px;        
         text-align: left;
@@ -150,7 +150,8 @@
 .hereis__img-320 {
     display: flex;
     align-self: flex-end;
-    padding-left: 19px;
+    padding: 17.5px 0 17.5px 19px;
+    margin-top: 9px;
     @media (min-width: $tablet-bp) {
         display: none;
     }
