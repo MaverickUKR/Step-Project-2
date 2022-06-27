@@ -32,7 +32,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #635C73;
-  margin-top: 39.5px;
+  margin-top: 40.5px;
+  margin-bottom: 0;
 }
 @mixin revolutionary-text {
   font-family: 'Lato';
@@ -106,7 +107,7 @@
     line-height: 16px;
     justify-content: center;
     color: $black;
-    margin: 27px 26px 14px 24px;
+    margin-bottom: 14px;
 }
 @mixin hereis__item-text {
     font-family: $lato;

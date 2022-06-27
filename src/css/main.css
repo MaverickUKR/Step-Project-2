@@ -48,7 +48,7 @@ body {
     font-size: 48px;
     line-height: 50px;
     font-weight: 700;
-    margin-top: 83px;
+    margin-top: 0;
     margin-bottom: 112px;
   }
 }
@@ -245,7 +245,7 @@ body {
 .header {
   position: relative;
   background-color: #27262a;
-  margin-bottom: 79px;
+  margin-bottom: 79.5px;
 }
 @media (min-width: 481px) and (max-width: 992px) {
   .header {
@@ -682,6 +682,7 @@ body {
   color: #8d81ac;
   text-align: center;
   padding: 0 11px 14px;
+  text-transform: capitalize;
 }
 @media (min-width: 481px) and (max-width: 992px) {
   .fork-app__text {
@@ -690,6 +691,10 @@ body {
     font-size: 24px;
     line-height: 24px;
     padding-bottom: 19px;
+    text-transform: lowercase;
+  }
+  .fork-app__text::first-letter {
+    text-transform: uppercase;
   }
 }
 @media (min-width: 993px) {
@@ -697,6 +702,10 @@ body {
     font-size: 30px;
     line-height: 30px;
     padding-bottom: 19px;
+    text-transform: lowercase;
+  }
+  .fork-app__text::first-letter {
+    text-transform: uppercase;
   }
 }
 .fork-app__text2 {
@@ -826,7 +835,7 @@ body {
   margin-top: 38px;
 }
 .hereis__list-item:nth-child(4) {
-  margin: 40px 22px 49px 30px;
+  margin: 40px 22px 73px 30px;
 }
 @media (min-width: 481px) {
   .hereis__list-item {
@@ -845,8 +854,11 @@ body {
     padding-left: 11px;
   }
 }
-@media (min-width: 481px) and (min-width: 481px) {
+@media (min-width: 481px) and (min-width: 993px) {
   .hereis__list-item {
+    position: static;
+    height: 110px;
+    padding: 0;
     margin-top: 100px;
   }
   .hereis__list-item:nth-child(2) {
@@ -857,13 +869,6 @@ body {
   }
   .hereis__list-item:nth-child(4) {
     margin-top: 36.57px;
-  }
-}
-@media (min-width: 993px) {
-  .hereis__list-item {
-    position: static;
-    height: 110px;
-    padding: 0;
   }
 }
 
@@ -878,6 +883,9 @@ body {
   }
 }
 
+.hereis__text-wrapper {
+  margin-top: 27px;
+}
 @media (min-width: 481px) {
   .hereis__text-wrapper {
     display: flex;
@@ -885,21 +893,31 @@ body {
     padding-left: 134px;
     align-self: center;
     margin-right: 22px;
+    margin-bottom: 40px;
   }
 }
 
+#hereis-2 {
+  margin-top: 21px;
+}
 @media (min-width: 481px) {
   #hereis-2 {
     margin-left: 1px;
   }
 }
 
+#hereis-3 {
+  margin-top: 20px;
+}
 @media (min-width: 481px) {
   #hereis-3 {
     margin-left: -16px;
   }
 }
 
+#hereis-4 {
+  margin-top: 23px;
+}
 @media (min-width: 481px) {
   #hereis-4 {
     margin-left: -11px;
@@ -913,7 +931,7 @@ body {
   line-height: 16px;
   justify-content: center;
   color: #000000;
-  margin: 27px 26px 14px 24px;
+  margin-bottom: 14px;
 }
 @media (min-width: 481px) {
   .hereis__item-title {
@@ -949,8 +967,7 @@ body {
 .hereis__img-320 {
   display: flex;
   align-self: flex-end;
-  padding: 17.5px 0 17.5px 19px;
-  margin-top: 9px;
+  margin-top: 7px;
 }
 @media (min-width: 481px) {
   .hereis__img-320 {
@@ -965,11 +982,11 @@ body {
   .hereis__img-768 {
     display: flex;
     align-self: flex-end;
-    padding: 24px 0 24px 24px;
   }
 }
 @media (min-width: 993px) {
   .hereis__img-768 {
+    align-self: center;
     margin: 0;
     grid-area: img;
     margin-top: -30px;
@@ -1009,6 +1026,7 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
+  padding-top: 0;
   color: #ffffff;
 }
 @media (min-width: 481px) and (max-width: 992px) {
@@ -1107,6 +1125,7 @@ body {
 @media (min-width: 993px) {
   .people--text {
     width: 887px;
+    margin: 0 auto;
     margin-bottom: 132px;
   }
 }
@@ -1151,11 +1170,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #635C73;
-  margin-top: 39.5px;
+  margin-top: 40.5px;
+  margin-bottom: 0;
 }
 @media (min-width: 481px) {
   .revolutionary-title {
-    margin-top: 93.5px;
+    margin-top: 73.5px;
     margin-bottom: 0;
     font-size: 42px;
     line-height: 42px;

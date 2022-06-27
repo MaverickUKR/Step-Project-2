@@ -59,7 +59,7 @@
         margin-top: 38px;
     }
     &:nth-child(4) {
-        margin: 40px 22px 49px 30px;
+        margin: 40px 22px 73px 30px;
     }
     @media (min-width: $tablet-bp) {
 		display: flex;
@@ -75,7 +75,10 @@
         &:nth-child(4) {
             padding-left: 11px;
         }
-        @media (min-width: $tablet-bp) {
+        @media (min-width: $desktop-bp) {
+            position: static;
+            height: 110px;
+            padding: 0;
             margin-top: 100px;
             &:nth-child(2) {
                 margin-top: 35.57px;
@@ -88,11 +91,7 @@
             }
         }
 	}
-    @media (min-width: $desktop-bp) {
-    position: static;
-    height: 110px;
-    padding: 0;
-    }
+
 }
 .hereis__item-icon {
     display: block;
@@ -103,25 +102,30 @@
     }
 }
 .hereis__text-wrapper {
+    margin-top: 27px;
     @media (min-width: $tablet-bp) {
         display: flex;
         flex-direction: column;
         padding-left: 134px;
         align-self: center;
         margin-right: 22px;
+        margin-bottom: 40px;
     }
 }  
 #hereis-2 {
+    margin-top: 21px;
     @media (min-width: $tablet-bp) {
         margin-left: 1px;
     }
 }
 #hereis-3 {
+    margin-top: 20px;
     @media (min-width: $tablet-bp) {
         margin-left: -16px;
     }
 }
 #hereis-4 {
+    margin-top: 23px;
     @media (min-width: $tablet-bp) {
         margin-left: -11px;
     }
@@ -150,8 +154,7 @@
 .hereis__img-320 {
     display: flex;
     align-self: flex-end;
-    padding: 17.5px 0 17.5px 19px;
-    margin-top: 9px;
+    margin-top: 7px;
     @media (min-width: $tablet-bp) {
         display: none;
     }
@@ -161,9 +164,9 @@
     @media (min-width: $tablet-bp) {
         display: flex;
         align-self: flex-end;
-        padding: 24px 0 24px 24px;
     }
     @media (min-width: $desktop-bp) {
+        align-self:center;
         margin: 0;
         grid-area: img;
         margin-top: -30px;
