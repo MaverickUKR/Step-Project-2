@@ -114,4 +114,6 @@
 }
 .fork__item__btn-active {
     @include fork__item__btn-active;
+    font-size: 16px;
+    line-height: 18px;
 }
