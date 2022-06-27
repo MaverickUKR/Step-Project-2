@@ -1,5 +1,7 @@
 ## Використані технології:
 
+https://romanbrus.gitlab.io/advanced-html-css-step-project-forkio/
+
 # gulp 
 - gulp;
 - gulp-sass;
