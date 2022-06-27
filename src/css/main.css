@@ -345,6 +345,7 @@ body {
     font-size: 16px;
     line-height: 17px;
     margin-top: 31px;
+    box-sizing: border-box;
   }
   .header__buy-now:hover {
     background-color: #ffffff;
@@ -1109,6 +1110,7 @@ body {
   color: #ffffff;
   padding-top: 29px;
   text-align: center;
+  font-style: italic;
 }
 .people--text {
   position: relative;
