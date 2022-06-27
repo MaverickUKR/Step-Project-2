@@ -1126,7 +1126,7 @@ body {
   .people--text {
     width: 887px;
     margin: 0 auto;
-    margin-bottom: 132px;
+    margin-bottom: 112px;
   }
 }
 .people--text::after {
@@ -1277,4 +1277,9 @@ body {
   background-color: #fff;
   font-weight: bold;
   border-left: #e3e3e3 1px solid;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
 }
