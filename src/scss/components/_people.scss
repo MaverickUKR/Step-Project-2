@@ -20,7 +20,7 @@
   @media (min-width: 993px) {
     background-image: url(../../dist/img/people-are-full-background.jpg);
     background-position: center center;
-    background-size: cover;
+    background-size:cover;
   }
   &--h2 {
     padding-top: 57px;
@@ -28,7 +28,6 @@
     @include montserrat-bold;
     font-size: 36px;
     line-height: 48px;
-    padding-top: 0;
     color: $white;
     @media (min-width: 481px) and (max-width: 992px) {
       font-size: 42px;
@@ -111,7 +110,7 @@
     @media (min-width: 993px) {
       width: 887px;
       margin: 0 auto;
-      margin-bottom: 112px;
+      margin-bottom: 13.5px;
     }
 
     &::after {

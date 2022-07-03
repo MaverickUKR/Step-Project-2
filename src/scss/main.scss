@@ -7,8 +7,10 @@
 @import "./components/revolutionary";
 
 body {
-    max-width: 1200px;
+    max-width: 100%;
+    min-width: 320px;
     margin: 0 auto;
+    overflow-x:hidden;
 }
 .people > .container,
 .revolutionary-wrapper,
@@ -17,9 +19,3 @@ body {
   padding: 0 10px;
 }
 
-.people > .container,
-.revolutionary-wrapper,
-.hereis-wrapper,
-.fork-wrapper {
-    padding: 0 10px;
-}

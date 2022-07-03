@@ -1,19 +1,22 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
-
+.hereis {
+    @media (min-width: $desktop-bp) {
+		background-color: #F4F4F4;
+	}
+}
 .hereis-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%; 
-    margin: 88px 22px 6px 0; 
+    margin: 88px 0 6px 0; 
     @media (min-width: $tablet-bp) {
 		margin-top: 98px;
 	}
     @media (min-width: $desktop-bp) {
         display: grid;
-		background-color: #F4F4F4;
+        margin: 0 auto;
         height: 711px;
         margin-top: 70px;
         grid-template: repeat(4, 1fr), repeat(2, 1fr);
@@ -21,6 +24,7 @@
                              "list img"
                              "list img"
                              "list img";
+        max-width: 1200px;
 	}
 }
 .hereis-title {
@@ -80,6 +84,7 @@
             height: 110px;
             padding: 0;
             margin-top: 100px;
+            max-width: 515px;
             &:nth-child(2) {
                 margin-top: 35.57px;
             }
@@ -155,6 +160,7 @@
     display: flex;
     align-self: flex-end;
     margin-top: 7px;
+    max-width: 100%;
     @media (min-width: $tablet-bp) {
         display: none;
     }
@@ -164,11 +170,13 @@
     @media (min-width: $tablet-bp) {
         display: flex;
         align-self: flex-end;
+        max-width: 100%;
     }
     @media (min-width: $desktop-bp) {
         align-self:center;
         margin: 0;
         grid-area: img;
         margin-top: -30px;
+        
     }
 }

@@ -1,6 +1,10 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .header {
   position: relative;
   background-color: $header-grey;

@@ -4,6 +4,11 @@
 .revolutionary-wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (min-width: $desktop-bp) {
+        margin-bottom: 70px;
+    }
 }
 .revolutionary-title {
     @include revolutionary-title;
